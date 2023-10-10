@@ -26,3 +26,12 @@ const Mission = ({ missionName, description, joined, onClick }) => (
     </td>
   </tr>
 );
+
+Mission.propTypes = {
+  missionName: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  joined: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
+export default Mission;

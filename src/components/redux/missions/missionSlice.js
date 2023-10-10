@@ -24,3 +24,8 @@ export const joinMission = (payload) => ({
   type: JOIN_MISSION,
   payload,
 });
+
+export const leaveMission = (payload) => ({
+  type: LEAVE_MISSION,
+  payload,
+});

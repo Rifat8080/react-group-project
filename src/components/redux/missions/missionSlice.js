@@ -29,3 +29,29 @@ export const leaveMission = (payload) => ({
   type: LEAVE_MISSION,
   payload,
 });
+
+const missionsReducer = (state = initialMissionsState, action) => {
+  switch (action.type) {
+    case `${DISPLAY_MISSIONS}/fulfilled`:
+      return {
+        status: "succeeded",
+        missions: action.payload,
+      };
+    case JOIN_MISSION: {
+      const newState = state.missions.map((mission) => {
+        if (mission.id !== action.payload.id) {
+          return mission;
+        }
+        return { ...mission, joined: !mission.joined };
+      });
+      return {
+        ...state,
+        missions: newState,
+      };
+    }
+    default:
+      return state;
+  }
+};
+
+export default missionsReducer;

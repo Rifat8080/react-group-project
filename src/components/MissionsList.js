@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { displayMissions, joinMission } from "../redux/missions/missionSlice";
-import Mission from "./Mission";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { displayMissions, joinMission } from '../redux/missions/missionSlice';
+import Mission from './Mission';
 
 const MissionsList = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ const MissionsList = () => {
   const { status, missions } = missionsStore;
 
   useEffect(() => {
-    if (status === "initial") {
+    if (status === 'initial') {
       dispatch(displayMissions());
     }
   }, [dispatch, status]);

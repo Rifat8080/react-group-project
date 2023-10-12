@@ -1,9 +1,9 @@
-import { createAsyncThunk } from "@reduxjs/toolkit";
+import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const DISPLAY_MISSIONS = "space_travelers/missions/DISPLAY_MISSIONS";
-const JOIN_MISSION = "space_travelers/missions/JOIN_MISSION";
-const LEAVE_MISSION = "space_travelers/missions/LEAVE_MISSION";
-const URL = "https://api.spacexdata.com/v3/missions";
+const DISPLAY_MISSIONS = 'space_travelers/missions/DISPLAY_MISSIONS';
+const JOIN_MISSION = 'space_travelers/missions/JOIN_MISSION';
+const LEAVE_MISSION = 'space_travelers/missions/LEAVE_MISSION';
+const URL = 'https://api.spacexdata.com/v3/missions';
 
 export const displayMissions = createAsyncThunk(DISPLAY_MISSIONS, async () => {
   const result = [];
@@ -29,12 +29,16 @@ export const leaveMission = (payload) => ({
   type: LEAVE_MISSION,
   payload,
 });
+const initialMissionsState = {
+  status: 'initial',
+  missions: [],
+};
 
 const missionsReducer = (state = initialMissionsState, action) => {
   switch (action.type) {
     case `${DISPLAY_MISSIONS}/fulfilled`:
       return {
-        status: "succeeded",
+        status: 'succeeded',
         missions: action.payload,
       };
     case JOIN_MISSION: {

@@ -1,27 +1,30 @@
 /* eslint-disable import/no-extraneous-dependencies */
-import { PropTypes } from "prop-types";
+import { PropTypes } from 'prop-types';
 
-const Mission = ({ missionName, description, joined, onClick }) => (
+const Mission = ({
+  missionName, description, joined, onClick,
+}) => (
   <tr>
     <td className="col-md-1">{missionName}</td>
     <td className="col-md-4">{description}</td>
     <td className="align-middle col-md-1 text-center">
-      <span className={joined ? "member" : "not-member "}>
-        {joined ? "Active Member" : "NOT A MEMBER"}{" "}
+      <span className={joined ? 'member' : 'not-member '}>
+        {joined ? 'Active Member' : 'NOT A MEMBER'}
+        {' '}
       </span>
     </td>
     <td
-      className={`align-middle col-md-1 text-center ${joined && "btn-active"}`}
+      className={`align-middle col-md-1 text-center ${joined && 'btn-active'}`}
     >
-      {" "}
+      {' '}
       <button
         type="button"
         className={`btn ${
-          joined ? "btn-outline-danger" : "btn-outline-secondary"
+          joined ? 'btn-outline-danger' : 'btn-outline-secondary'
         }`}
         onClick={onClick}
       >
-        {joined ? "Leave Mission" : "Join Mission"}
+        {joined ? 'Leave Mission' : 'Join Mission'}
       </button>
     </td>
   </tr>

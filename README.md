@@ -122,11 +122,11 @@ The project will open on your default browser. Interact with the project :)
 - Twitter: (https://twitter.com/mdmahadirifat98)
 - LinkedIn: (https://www.linkedin.com/in/md-mahadi-hasan-rifat-8b7851265/)
 
-👤 **Author - Abdourahmane Jalloh**
+👤 **Author - Naol Kidanu**
 
-- GitHub: (https://github.com/aradradev)
-- Twitter: (https://twitter.com/Abdoul_2023)
-- LinkedIn: (https://www.linkedin.com/in/abdul-jalloh)  
+- GitHub: (https://github.com/naolkidanu)
+- Twitter: ()
+- LinkedIn: ()  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +143,7 @@ The project will open on your default browser. Interact with the project :)
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Rifat8080/react-redux-group-project/issues).
+Feel free to check the [issues page](https://github.com/Rifat8080/react-group-project/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

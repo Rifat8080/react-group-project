@@ -125,8 +125,8 @@ The project will open on your default browser. Interact with the project :)
 👤 **Author - Naol Kidanu**
 
 - GitHub: (https://github.com/naolkidanu)
-- Twitter: ()
-- LinkedIn: ()  
+- Twitter: (https://twitter.com/NaolKidanu88624)
+- LinkedIn: (https://www.linkedin.com/in/naol-kidanu-3b64b7227/)  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
